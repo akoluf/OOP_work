@@ -23,4 +23,9 @@ public class Cat extends Animal {
     public String getLegsCountAsString() {
         return legsCount;
     }
+
+    @Override
+    public void toGo() {
+        System.out.println(getName() + " Не летает, только ходит и если очень нужно - плавает.");
+    }
 }

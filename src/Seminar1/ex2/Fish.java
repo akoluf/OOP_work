@@ -7,8 +7,8 @@ public class Fish extends Animal {
     }
 
     @Override
-    public void toGo() {
-        System.out.println(getName() + " плавает.");
+    public void swim() {
+        super.swim();
     }
 
     public void printInfo() {

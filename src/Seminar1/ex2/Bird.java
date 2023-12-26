@@ -9,8 +9,8 @@ public class Bird extends Animal {
     }
 
     @Override
-    public void toGo() {
-        System.out.println(getName() + " летит.");
+    public void fly() {
+        super.fly();
     }
 
     public void printInfo() {

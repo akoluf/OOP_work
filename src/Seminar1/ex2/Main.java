@@ -1,8 +1,8 @@
 package Seminar1.ex2;
+
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 public class Main {
     public static void main(String[] args) {
         List<String> vaccinations = new ArrayList<>();

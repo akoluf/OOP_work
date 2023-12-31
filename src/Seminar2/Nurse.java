@@ -1,6 +1,6 @@
 package Seminar2;
 
-public class Nurse extends VeterinaryClinic implements AnimalFeeding, AnimalCleaning, AnimalBandageChanging {
+public class Nurse implements AnimalFeeding, AnimalCleaning, AnimalBandageChanging {
     private String name;
     private String specialization;
 

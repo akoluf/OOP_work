@@ -1,10 +1,9 @@
 package Seminar2;
 
 import Seminar2.Animal;
-import Seminar2.VeterinaryClinic;
 import java.util.List;
 
-public class Doctor extends VeterinaryClinic implements AnimalTreatment, AnimalSurgery, AnimalVaccination, AnimalMonitoring {
+public class Doctor implements AnimalTreatment, AnimalSurgery, AnimalVaccination, AnimalMonitoring {
     private String name;
     private String specialization;
 

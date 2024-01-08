@@ -37,25 +37,27 @@ public class MyLinkedList<T extends Comparable<T>> implements MyList<T> {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
         }
-        if (head == null || index == 0) return; // Проверяем, пуст ли список или удаляем первый элемент
-
-        Node<T> currentNode = head;
-        if (index == 0) {
-            head = currentNode.next;
+        if (index == 0) { // If the index is 0, we are deleting the head
+            head = head.next;
             if (head != null) {
                 head.prev = null;
+            } else { // If the list is empty after deleting the head, we need to set tail to null
+                tail = null;
             }
-        } else if (index == size - 1) {
-            tail = currentNode.prev;
+        } else if (index == size - 1) { // If the index is the last index, we are deleting the tail
+            tail = tail.prev;
             if (tail != null) {
                 tail.next = null;
+            } else { // If the list is empty after deleting the tail, we need to set head to null
+                head = null;
             }
-        } else {
-            currentNode = currentNode.next;
+        } else { // If the index is in the middle, we need to find the node at the given index and delete it
+            Node<T> currentNode = head;
+            for (int i = 0; i < index; i++) {
+                currentNode = currentNode.next;
+            }
             currentNode.prev.next = currentNode.next;
-            if (currentNode.next != null) {
-                currentNode.next.prev = currentNode.prev;
-            }
+            currentNode.next.prev = currentNode.prev;
         }
         size--;
     }
@@ -132,5 +134,20 @@ public class MyLinkedList<T extends Comparable<T>> implements MyList<T> {
             tail = newNode;
         }
         size++;
+    }
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        Node<T> current = head;
+        while (current != null) {
+            sb.append(current.data);
+            if (current.next != null) {
+                sb.append(", ");
+            }
+            current = current.next;
+        }
+        sb.append("]");
+        return sb.toString();
     }
 }

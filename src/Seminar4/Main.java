@@ -30,19 +30,17 @@ public class Main {
 
         // MyLinkedList
         MyList<String> list2 = new MyLinkedList<>();
-        list2.add("Мороз и солнце; день чудесный!");
         list2.add("Еще ты дремлешь, друг прелестный —");
         list2.add("Пора, красавица, проснись:");
         list2.add("Открой сомкнуты негой взоры");
         list2.add("Навстречу северной Авроры,");
-        list2.add("Звездою севера явись!");
 
-        System.out.println("Initial list2: " + list2);
-        list2.addFirst("Мороз и солнце");
+        System.out.println("Первоначальный: " + list2);
+        list2.addFirst("Мороз и солнце, День чудесный");
         list2.addLast("Звездою севера явись!");
-        System.out.println("After adding First and Last elements: " + list2);
+        System.out.println("С добавлением: " + list2);
+        System.out.println(list2.get(3));
         list2.delete(0);
-        list2.delete(list2.size() - 1);
-        System.out.println("List after removing the first and last elements: " + list2);
+        System.out.println(list2);
     }
 }

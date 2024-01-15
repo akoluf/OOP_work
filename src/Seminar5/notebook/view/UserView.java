@@ -6,6 +6,9 @@ import Seminar5.notebook.util.Commands;
 
 import java.util.Scanner;
 
+import static Seminar5.notebook.model.repository.impl.UserRepository.createUser;
+import static Seminar5.notebook.model.repository.impl.UserRepository.prompt;
+
 public class UserView {
     private final UserController userController;
 
@@ -13,7 +16,7 @@ public class UserView {
         this.userController = userController;
     }
 
-    public void run(){
+    public void run() {
         Commands com;
 
         while (true) {
@@ -40,22 +43,16 @@ public class UserView {
                     userController.updateUser(userId, createUser());
                 case LIST:
                     System.out.println(userController.readAll());
+                    break;
                 case DELETE:
-                    return;
+                    String deleteUserId = prompt("Enter user the id you want to delete: ");
+                    userController.deleteUser(Long.valueOf(deleteUserId));
+                    break;
             }
         }
     }
 
-    private String prompt(String message) {
-        Scanner in = new Scanner(System.in);
-        System.out.print(message);
-        return in.nextLine();
-    }
 
-    private User createUser() {
-        String firstName = prompt("Имя: ");
-        String lastName = prompt("Фамилия: ");
-        String phone = prompt("Номер телефона: ");
-        return new User(firstName, lastName, phone);
-    }
 }
+
+

@@ -1,13 +1,13 @@
 package Seminar6.homework;
 
-public class Persister{
+public class UserPersister implements PersisterInterface {
     private final User user;
 
-    public Persister(User user){
+    public UserPersister(User user) {
         this.user = user;
     }
 
-    public void save(){
+    public void save() {
         System.out.println("Save user: " + user.getName());
     }
 }

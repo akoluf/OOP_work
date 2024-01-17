@@ -11,12 +11,13 @@ public class User{
         return name;
     }
 
-    public void save(){
-        Persister persister = new Persister(this);
-        persister.save();
+    public void report(){
+        UserReporter reporter = new UserReporter(this);
+        reporter.report();
     }
 
-    public void report(){
-        System.out.println("Report for user: " + name);
+    public void save(){
+        UserPersister persister = new UserPersister(this);
+        persister.save();
     }
 }

@@ -4,7 +4,8 @@ import Seminar6.dip1.model.ReportItem;
 
 import java.util.List;
 
-public class ReportPrinter {
+public class PrinterReporter implements Reportable{
+    @Override
     public void output(List<ReportItem> items) {
         System.out.println("Output to printer");
         for (ReportItem item : items) {

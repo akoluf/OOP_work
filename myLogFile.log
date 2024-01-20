@@ -1,0 +1,46 @@
+янв. 20, 2024 1:20:23 PM Kalc.main main
+INFO: My first log
+янв. 20, 2024 1:20:23 PM Kalc.main main
+INFO: Starting the program
+янв. 20, 2024 1:20:36 PM Kalc.main main
+INFO: First number: 8.0 + 5.0i
+янв. 20, 2024 1:20:42 PM Kalc.main main
+INFO: Second number: 9.0 + 7.0i
+янв. 20, 2024 1:20:45 PM Kalc.main main
+INFO: Multiplication operation
+янв. 20, 2024 1:20:45 PM Kalc.main main
+INFO: Result: 37.0 + 101.0i
+янв. 20, 2024 1:59:05 PM Kalc.Main main
+INFO: My first log
+янв. 20, 2024 1:59:05 PM Kalc.Main main
+INFO: Starting the program
+янв. 20, 2024 1:59:11 PM Kalc.Main main
+INFO: First number: 9.0 + 7.0i
+янв. 20, 2024 1:59:16 PM Kalc.Main main
+INFO: Second number: 8.0 + 1.0i
+янв. 20, 2024 1:59:19 PM Kalc.Main main
+INFO: Result: 65.0 + 65.0i
+янв. 20, 2024 2:00:42 PM Kalc.Main main
+INFO: My first log
+янв. 20, 2024 2:00:42 PM Kalc.Main main
+INFO: Starting the program
+янв. 20, 2024 2:00:49 PM Kalc.Main main
+INFO: First number: 78.0 + 9.0i
+янв. 20, 2024 2:00:51 PM Kalc.Main main
+INFO: Second number: 74.0 + 5.0i
+янв. 20, 2024 2:00:55 PM Kalc.Main main
+INFO: Result: 1.0574441010725322 + 0.05017269587347755i
+янв. 20, 2024 3:16:17 PM Kalc.Main main
+INFO: My first log
+янв. 20, 2024 3:16:18 PM Kalc.Main main
+INFO: Starting the program
+янв. 20, 2024 3:16:30 PM Kalc.Main main
+INFO: My first log
+янв. 20, 2024 3:16:30 PM Kalc.Main main
+INFO: Starting the program
+янв. 20, 2024 3:16:33 PM Kalc.Main main
+INFO: First number: 4.0 + 7.0i
+янв. 20, 2024 3:16:35 PM Kalc.Main main
+INFO: Second number: 5.0 + 9.0i
+янв. 20, 2024 3:16:38 PM Kalc.Main main
+INFO: Result: 9.0 + 16.0i
